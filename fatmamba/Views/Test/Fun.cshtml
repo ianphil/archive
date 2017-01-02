@@ -1,0 +1,12 @@
+﻿@using fatmamba.Common
+@model Artist
+
+<div class="row">
+    <h3 title="@Model.ArtistName">Hello @Model.ArtistName!</h3>
+</div>
+
+<form asp-controller="Test" asp-action="Fun" method="post">
+    Score: <input asp-for="Score" /><br />
+    @*<select asp-for="Country" asp-items="Model.Countries"></select>*@
+    <br /><button type="submit">Register</button>
+</form>
